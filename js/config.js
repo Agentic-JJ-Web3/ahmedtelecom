@@ -7,7 +7,7 @@ window.SITE_CONFIG = {
 
   // ➜ ICI : votre numéro WhatsApp, indicatif Cameroun (237) + 9 chiffres,
   //   sans "+", sans espaces. Exemple : '237699123456'
-  whatsappNumber: '237XXXXXXXXX',
+  whatsappNumber: '237696777819',
 
   // Message du bouton WhatsApp général
   defaultMessage: 'Bonjour Ahmed Telecom ! Je souhaite avoir des informations sur vos produits et vos offres.',
