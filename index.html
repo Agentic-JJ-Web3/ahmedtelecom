@@ -39,6 +39,7 @@
       <nav class="nav" id="nav" aria-label="Navigation principale">
         <a href="#produits">Produits</a>
         <a href="#offres" data-nav-offers hidden>Offres</a>
+        <a href="#groupe" data-nav-group hidden>Groupe WhatsApp</a>
         <a href="#commander">Commander</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -82,6 +83,15 @@
 
     <section class="offer-wrap" id="offres" aria-labelledby="offer-title" hidden></section>
 
+    <section class="group-cta" id="groupe" aria-labelledby="group-title" hidden>
+      <div class="container group-cta__inner">
+        <svg class="icon group-cta__icon" aria-hidden="true"><use href="#i-wa"/></svg>
+        <h2 id="group-title">Rejoignez notre groupe WhatsApp</h2>
+        <p>Soyez informé(e) en premier des nouveaux produits, promos et offres exclusives.</p>
+        <a class="btn btn--lg group-cta__btn" data-wa-group target="_blank" rel="noopener noreferrer"><svg class="icon" aria-hidden="true"><use href="#i-wa"/></svg>Rejoindre le groupe</a>
+      </div>
+    </section>
+
     <section class="section" id="commander" aria-labelledby="how-title">
       <div class="container how">
         <div>
@@ -117,6 +127,7 @@
       </div>
       <ul class="footer__links">
         <li><a data-wa="footer">WhatsApp</a></li>
+        <li id="group-item" hidden><a data-wa-group target="_blank" rel="noopener noreferrer">Groupe WhatsApp</a></li>
         <li id="fb-item" hidden><a id="fb-link" target="_blank" rel="noopener noreferrer">Facebook</a></li>
       </ul>
       <p class="footer__copy">© <span id="year"></span> <span data-name>Ahmed Telecom</span></p>
