@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Admin produits | Ahmed Telecom</title>
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/admin.css">
+</head>
+<body class="admin-body">
+
+<div id="gate" class="admin-gate">
+  <form id="gate-form" class="admin-gate__card">
+    <h1>Admin — Ahmed Telecom</h1>
+    <p>Entrez le mot de passe admin pour gérer les produits.</p>
+    <input type="password" id="gate-password" autocomplete="current-password" placeholder="Mot de passe" required>
+    <button type="submit" class="btn btn--primary btn--block">Entrer</button>
+    <p id="gate-error" class="admin-error" hidden></p>
+  </form>
+</div>
+
+<div id="dashboard" class="admin" hidden>
+  <header class="admin-header">
+    <h1>Produits — Ahmed Telecom</h1>
+    <div class="admin-header__actions">
+      <span id="status-line" class="admin-status"></span>
+      <button type="button" id="logout-btn" class="btn btn--sm">Verrouiller</button>
+    </div>
+  </header>
+
+  <section class="admin-section">
+    <h2>Catégories</h2>
+    <ul id="category-list" class="admin-category-list"></ul>
+    <form id="category-form" class="admin-inline-form">
+      <input type="text" id="cat-id" placeholder="id (ex: casques)" pattern="[a-z0-9]+(-[a-z0-9]+)*" required>
+      <input type="text" id="cat-label" placeholder="Libellé (ex: Casques)" required>
+      <button type="submit" class="btn btn--sm">Ajouter / modifier</button>
+    </form>
+  </section>
+
+  <section class="admin-section">
+    <div class="admin-section__head">
+      <h2>Produits</h2>
+      <button type="button" id="new-product-btn" class="btn btn--sm btn--primary">+ Nouveau produit</button>
+    </div>
+    <div id="product-list" class="admin-product-list"></div>
+  </section>
+
+  <section class="admin-section" id="product-form-section" hidden>
+    <h2 id="product-form-title">Nouveau produit</h2>
+    <form id="product-form" class="admin-product-form">
+      <label>Identifiant (id)
+        <input type="text" id="p-id" pattern="[a-z0-9]+(-[a-z0-9]+)*" placeholder="casque-filaire" required>
+      </label>
+      <label>Catégorie
+        <select id="p-category" required></select>
+      </label>
+      <label>Nom
+        <input type="text" id="p-name" required>
+      </label>
+      <label>Prix (XAF)
+        <input type="number" id="p-price" min="0" step="1" required>
+      </label>
+      <label>Ancien prix (optionnel)
+        <input type="number" id="p-oldprice" min="0" step="1">
+      </label>
+      <label>Disponibilité
+        <select id="p-availability">
+          <option value="">Inconnue (rien affiché)</option>
+          <option value="in_stock">Disponible</option>
+          <option value="on_request">Sur demande</option>
+          <option value="out">Rupture de stock</option>
+        </select>
+      </label>
+      <label class="admin-checkbox">
+        <input type="checkbox" id="p-sample"> Produit d'exemple (affiche le badge "Exemple")
+      </label>
+      <label>Résumé court
+        <input type="text" id="p-short">
+      </label>
+      <label>Description
+        <textarea id="p-description" rows="3"></textarea>
+      </label>
+      <label>Caractéristiques (séparées par des virgules)
+        <input type="text" id="p-features" placeholder="Micro intégré, Pliable, ...">
+      </label>
+      <label>Texte alternatif image (optionnel)
+        <input type="text" id="p-imagealt">
+      </label>
+      <label>Photo
+        <input type="file" id="p-image-file" accept="image/jpeg,image/png,image/webp">
+        <span id="p-image-current" class="admin-muted"></span>
+      </label>
+      <input type="hidden" id="p-image-path">
+      <div class="admin-form-actions">
+        <button type="submit" class="btn btn--primary">Enregistrer</button>
+        <button type="button" id="cancel-product-btn" class="btn">Annuler</button>
+      </div>
+    </form>
+  </section>
+</div>
+
+<script src="js/admin-app.js"></script>
+</body>
+</html>
