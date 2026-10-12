@@ -19,6 +19,10 @@ window.SITE_CONFIG = {
   // ➜ ICI : l'adresse de votre page Facebook (le lien reste masqué tant que "VOTRE_PAGE" est présent)
   facebookUrl: 'https://www.facebook.com/share/1NTLr4eUXb/',
 
+  // ➜ ICI : le lien d'invitation de votre groupe WhatsApp (chat.whatsapp.com/...).
+  //   Laissez '' (vide) pour masquer le bouton/la section "Rejoindre le groupe".
+  whatsappGroupUrl: 'https://chat.whatsapp.com/FCZfHBtWQGjLtw0K0hT3rT',
+
   location: 'Dubai, Akwa, Douala',
   currency: 'XAF',
 
