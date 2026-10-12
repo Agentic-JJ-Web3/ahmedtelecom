@@ -27,8 +27,8 @@ window.SITE_CONFIG = {
   currency: 'XAF',
 
   // ➜ Remplacez ces fichiers dans le dossier assets/ (ou changez les chemins)
-  logo: 'assets/logo.svg',
-  heroImage: 'assets/hero.svg',
+  logo: 'assets/logo.jpg',
+  heroImage: 'assets/hero.jpg',
 
   // Affiche "Exemple" sur les produits marqués sample: true
   showSampleBadge: true,
