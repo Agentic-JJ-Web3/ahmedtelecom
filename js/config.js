@@ -17,7 +17,7 @@ window.SITE_CONFIG = {
     `Bonjour Ahmed Telecom ! Je suis intéressé(e) par le produit : ${name}. Pouvez-vous me confirmer le prix et la disponibilité ?`,
 
   // ➜ ICI : l'adresse de votre page Facebook (le lien reste masqué tant que "VOTRE_PAGE" est présent)
-  facebookUrl: 'https://www.facebook.com/VOTRE_PAGE',
+  facebookUrl: 'https://www.facebook.com/share/1NTLr4eUXb/',
 
   location: 'Dubai, Akwa, Douala',
   currency: 'XAF',
