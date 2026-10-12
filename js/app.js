@@ -92,9 +92,14 @@
 
   const grid = $('#grid'), chips = $('#chips');
   let active = 'all';
+  let searchTerm = '';
+  const DIACRITICS = { à: 'a', â: 'a', ä: 'a', é: 'e', è: 'e', ê: 'e', ë: 'e', î: 'i', ï: 'i', ô: 'o', ö: 'o', ù: 'u', û: 'u', ü: 'u', ç: 'c' };
+  const normalize = (s) => String(s).toLowerCase().replace(/[àâäéèêëîïôöùûüç]/g, (c) => DIACRITICS[c] || c);
   function renderGrid() {
-    const list = active === 'all' ? PRODUCTS : PRODUCTS.filter((p) => p.category === active);
-    grid.innerHTML = list.length ? list.map(cardHTML).join('') : '<p>Aucun produit dans cette catégorie pour le moment.</p>';
+    const term = normalize(searchTerm.trim());
+    let list = active === 'all' ? PRODUCTS : PRODUCTS.filter((p) => p.category === active);
+    if (term) list = list.filter((p) => normalize(p.name).includes(term) || normalize(p.short || '').includes(term));
+    grid.innerHTML = list.length ? list.map(cardHTML).join('') : `<p>${term ? 'Aucun produit ne correspond à votre recherche.' : 'Aucun produit dans cette catégorie pour le moment.'}</p>`;
   }
   function renderChips() {
     const used = CATS.filter((c) => PRODUCTS.some((p) => p.category === c.id));
@@ -111,6 +116,16 @@
   });
   renderChips();
   renderGrid();
+
+  /* ---------- Recherche ---------- */
+  const searchToggle = $('#search-toggle'), searchRow = $('#search-row'), searchInput = $('#search-input');
+  function setSearchOpen(open) {
+    searchRow.classList.toggle('is-open', open);
+    searchToggle.setAttribute('aria-expanded', String(open));
+    if (open) requestAnimationFrame(() => searchInput.focus());
+  }
+  searchToggle.addEventListener('click', () => setSearchOpen(!searchRow.classList.contains('is-open')));
+  searchInput.addEventListener('input', () => { searchTerm = searchInput.value; renderGrid(); });
 
   /* ---------- Offre ---------- */
   (function renderOffer() {
@@ -187,7 +202,7 @@
   }
 
   document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') { closeProduct(); setMenu(false); }
+    if (e.key === 'Escape') { closeProduct(); setMenu(false); setSearchOpen(false); }
     if (e.key === 'Tab' && drawer.classList.contains('is-open')) {
       const f = $$('a[href],button:not([disabled])', panel).filter((x) => x.offsetParent !== null);
       if (!f.length) return;
