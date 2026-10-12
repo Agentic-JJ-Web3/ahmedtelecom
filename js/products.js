@@ -111,22 +111,6 @@ window.PRODUCTS = [
     ]
   },
   {
-    "id": "powerbank-10000",
-    "sample": true,
-    "category": "powerbanks",
-    "name": "Powerbank 10 000 mAh",
-    "price": 8500,
-    "oldPrice": null,
-    "availability": "in_stock",
-    "image": "assets/powerbank.svg",
-    "short": "Compacte, facile à glisser dans la poche.",
-    "description": "Une batterie externe compacte pour les journées chargées.",
-    "features": [
-      "10 000 mAh",
-      "Format compact"
-    ]
-  },
-  {
     "id": "montre-connectee",
     "sample": false,
     "category": "montres",
