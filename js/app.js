@@ -29,6 +29,8 @@
   document.addEventListener('click', (e) => {
     const w = e.target.closest('a[data-wa]');
     if (w) track('whatsapp_click', { placement: w.dataset.wa });
+    const g = e.target.closest('a[data-wa-group]');
+    if (g) track('whatsapp_group_click', {});
     const q = e.target.closest('a[data-inquiry]');
     if (q) { const p = byId(q.dataset.inquiry); if (p) track('product_inquiry_click', { id: p.id, name: p.name }); }
     const o = e.target.closest('[data-open]');
@@ -45,6 +47,12 @@
   if (C.facebookUrl && !/VOTRE_PAGE/.test(C.facebookUrl)) {
     $('#fb-link').href = C.facebookUrl;
     $('#fb-item').hidden = false;
+  }
+  if (C.whatsappGroupUrl) {
+    $$('[data-wa-group]').forEach((a) => { a.href = C.whatsappGroupUrl; a.target = '_blank'; a.rel = 'noopener noreferrer'; });
+    $('#groupe').hidden = false;
+    $('#group-item').hidden = false;
+    $('[data-nav-group]').hidden = false;
   }
   const ann = C.announcement;
   if (ann && ann.enabled) {
