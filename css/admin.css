@@ -2,6 +2,7 @@
 .admin-body{background:var(--paper);padding-bottom:40px}
 
 .admin-gate{min-height:100dvh;display:grid;place-items:center;padding:20px}
+.admin-gate[hidden]{display:none}
 .admin-gate__card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:28px;max-width:360px;width:100%;display:grid;gap:12px}
 .admin-gate__card h1{font-size:1.4rem}
 .admin-gate__card p{color:var(--muted);font-size:.92rem}
@@ -31,7 +32,7 @@
 
 .admin-product-list{display:grid;gap:10px}
 .admin-product-row{display:grid;grid-template-columns:56px 1fr auto;gap:12px;align-items:center;padding:10px;border:1px solid var(--line);border-radius:10px}
-.admin-product-row img{width:56px;height:56px;object-fit:contain;background:var(--paper);border-radius:8px}
+.admin-product-row img{width:56px;height:56px;object-fit:cover;object-position:center;background:var(--paper);border-radius:8px}
 .admin-product-row__main{display:grid;gap:2px}
 .admin-product-row__name{font-weight:600}
 .admin-product-row__meta{font-size:.85rem;color:var(--muted)}
