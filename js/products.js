@@ -50,8 +50,8 @@ window.PRODUCTS = [
     "sample": false,
     "category": "bluetooth",
     "name": "Casque Bluetooth pliable",
-    "price": 12000,
-    "oldPrice": 15000,
+    "price": 5000,
+    "oldPrice": 5000,
     "availability": "in_stock",
     "image": "assets/casque-bluetooth.jpg",
     "short": "Sans fil, pliable, facile à transporter.",
@@ -60,7 +60,8 @@ window.PRODUCTS = [
       "Connexion Bluetooth",
       "Pliable",
       "Micro intégré"
-    ]
+    ],
+    "imageAlt": ""
   },
   {
     "id": "ecouteurs-sans-fil",
