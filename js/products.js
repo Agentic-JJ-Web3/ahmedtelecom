@@ -237,5 +237,19 @@ window.PRODUCTS = [
     "features": [],
     "imageAlt": "",
     "image": "assets/prod-5-1791927272269.jpg"
+  },
+  {
+    "id": "prod-6",
+    "category": "montres",
+    "name": "Smart watch",
+    "price": 10000,
+    "oldPrice": 12500,
+    "availability": null,
+    "sample": false,
+    "short": "",
+    "description": "",
+    "features": [],
+    "imageAlt": "",
+    "image": "assets/prod-6-1791927333871.jpg"
   }
 ];
