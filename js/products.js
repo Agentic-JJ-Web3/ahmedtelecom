@@ -399,5 +399,19 @@ window.PRODUCTS = [
     "features": [],
     "imageAlt": "",
     "image": "assets/prod-16-1791929059474.jpg"
+  },
+  {
+    "id": "prod-17",
+    "category": "phone",
+    "name": "Iphone 18",
+    "price": 800000,
+    "oldPrice": 900000,
+    "availability": "in_stock",
+    "sample": false,
+    "short": "",
+    "description": "",
+    "features": [],
+    "imageAlt": "",
+    "image": "assets/prod-17-1791929117639.jpg"
   }
 ];
