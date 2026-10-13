@@ -283,5 +283,19 @@ window.PRODUCTS = [
     "features": [],
     "imageAlt": "",
     "image": "assets/prod-8-1791928483428.jpg"
+  },
+  {
+    "id": "prod-9",
+    "category": "shisha",
+    "name": "Shisha",
+    "price": 8000,
+    "oldPrice": 10000,
+    "availability": null,
+    "sample": false,
+    "short": "",
+    "description": "",
+    "features": [],
+    "imageAlt": "",
+    "image": "assets/prod-9-1791928539712.jpg"
   }
 ];
