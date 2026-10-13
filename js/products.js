@@ -339,5 +339,19 @@ window.PRODUCTS = [
     "features": [],
     "imageAlt": "",
     "image": "assets/prod-12-1791928706777.jpg"
+  },
+  {
+    "id": "prod-13",
+    "category": "accesoires",
+    "name": "Bass",
+    "price": 5000,
+    "oldPrice": 6500,
+    "availability": "in_stock",
+    "sample": false,
+    "short": "",
+    "description": "",
+    "features": [],
+    "imageAlt": "",
+    "image": "assets/prod-13-1791928793021.jpg"
   }
 ];
