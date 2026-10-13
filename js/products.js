@@ -385,5 +385,19 @@ window.PRODUCTS = [
     "features": [],
     "imageAlt": "",
     "image": "assets/prod-15-1791928927067.jpg"
+  },
+  {
+    "id": "prod-16",
+    "category": "phone",
+    "name": "IPhone 11",
+    "price": 120000,
+    "oldPrice": 130000,
+    "availability": "in_stock",
+    "sample": false,
+    "short": "",
+    "description": "",
+    "features": [],
+    "imageAlt": "",
+    "image": "assets/prod-16-1791929059474.jpg"
   }
 ];
