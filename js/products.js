@@ -311,5 +311,19 @@ window.PRODUCTS = [
     "features": [],
     "imageAlt": "",
     "image": "assets/prod-10-1791928608068.jpg"
+  },
+  {
+    "id": "prod-11",
+    "category": "casques",
+    "name": "Pure Bass",
+    "price": 8500,
+    "oldPrice": 9500,
+    "availability": null,
+    "sample": false,
+    "short": "",
+    "description": "",
+    "features": [],
+    "imageAlt": "",
+    "image": "assets/prod-11-1791928662749.jpg"
   }
 ];
