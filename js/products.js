@@ -371,5 +371,19 @@ window.PRODUCTS = [
     "features": [],
     "imageAlt": "",
     "image": "assets/prod-14-1791928846261.jpg"
+  },
+  {
+    "id": "prod-15",
+    "category": "phone",
+    "name": "IPhone 12",
+    "price": 165000,
+    "oldPrice": null,
+    "availability": "in_stock",
+    "sample": false,
+    "short": "",
+    "description": "",
+    "features": [],
+    "imageAlt": "",
+    "image": "assets/prod-15-1791928925555.jpg"
   }
 ];
