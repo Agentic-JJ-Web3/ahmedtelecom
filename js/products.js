@@ -100,8 +100,8 @@ window.PRODUCTS = [
     "sample": false,
     "category": "powerbanks",
     "name": "Powerbank 20 000 mAh",
-    "price": 14000,
-    "oldPrice": 17500,
+    "price": 8000,
+    "oldPrice": 1000,
     "availability": "in_stock",
     "image": "assets/powerbank-20000.jpg",
     "short": "Grande capacité pour plusieurs charges.",
@@ -109,7 +109,8 @@ window.PRODUCTS = [
     "features": [
       "20 000 mAh",
       "Plusieurs ports USB"
-    ]
+    ],
+    "imageAlt": ""
   },
   {
     "id": "montre-connectee",
