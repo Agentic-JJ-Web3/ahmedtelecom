@@ -31,6 +31,10 @@ window.CATEGORIES = [
   {
     "id": "accesoires",
     "label": "Accessories"
+  },
+  {
+    "id": "phone",
+    "label": "Smartphone"
   }
 ];
 
