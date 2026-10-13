@@ -163,5 +163,19 @@ window.PRODUCTS = [
     "description": "Un ensemble shisha complet. Réservé aux adultes.",
     "features": [],
     "imageAlt": ""
+  },
+  {
+    "id": "prod-1",
+    "category": "casques",
+    "name": "New product 1",
+    "price": 8000,
+    "oldPrice": 10000,
+    "availability": "in_stock",
+    "sample": false,
+    "short": "",
+    "description": "",
+    "features": [],
+    "imageAlt": "",
+    "image": "assets/prod-1-1791926986951.jpg"
   }
 ];
