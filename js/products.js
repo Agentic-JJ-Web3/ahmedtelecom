@@ -116,7 +116,7 @@ window.PRODUCTS = [
     "id": "montre-connectee",
     "sample": false,
     "category": "montres",
-    "name": "Montre connectée",
+    "name": "Montre téléphone",
     "price": 10000,
     "oldPrice": 15000,
     "availability": "on_request",
