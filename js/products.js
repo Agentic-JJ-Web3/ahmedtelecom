@@ -223,5 +223,19 @@ window.PRODUCTS = [
     "features": [],
     "imageAlt": "",
     "image": "assets/prod-4-1791927175111.jpg"
+  },
+  {
+    "id": "prod-5",
+    "category": "fan",
+    "name": "Portable fan",
+    "price": 5000,
+    "oldPrice": 6500,
+    "availability": "in_stock",
+    "sample": false,
+    "short": "",
+    "description": "",
+    "features": [],
+    "imageAlt": "",
+    "image": "assets/prod-5-1791927272269.jpg"
   }
 ];
