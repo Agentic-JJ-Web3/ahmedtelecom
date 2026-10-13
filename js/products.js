@@ -427,5 +427,19 @@ window.PRODUCTS = [
     "features": [],
     "imageAlt": "",
     "image": "assets/prod-18-1791929182713.jpg"
+  },
+  {
+    "id": "prod-19",
+    "category": "phone",
+    "name": "Iphone",
+    "price": 50000,
+    "oldPrice": 60000,
+    "availability": "in_stock",
+    "sample": false,
+    "short": "",
+    "description": "",
+    "features": [],
+    "imageAlt": "",
+    "image": "assets/prod-19-1791929233166.jpg"
   }
 ];
