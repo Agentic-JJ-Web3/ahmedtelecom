@@ -177,5 +177,19 @@ window.PRODUCTS = [
     "features": [],
     "imageAlt": "",
     "image": "assets/prod-1-1791926986951.jpg"
+  },
+  {
+    "id": "prod-2",
+    "category": "casques",
+    "name": "New product",
+    "price": 5000,
+    "oldPrice": 10000,
+    "availability": "in_stock",
+    "sample": false,
+    "short": "",
+    "description": "",
+    "features": [],
+    "imageAlt": "",
+    "image": "assets/prod-2-1791927062166.jpg"
   }
 ];
