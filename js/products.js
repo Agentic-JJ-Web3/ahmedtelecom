@@ -205,5 +205,19 @@ window.PRODUCTS = [
     "features": [],
     "imageAlt": "",
     "image": "assets/prod-3-1791927128009.jpg"
+  },
+  {
+    "id": "prod-4",
+    "category": "casques",
+    "name": "Headset",
+    "price": 6500,
+    "oldPrice": 9000,
+    "availability": null,
+    "sample": false,
+    "short": "",
+    "description": "",
+    "features": [],
+    "imageAlt": "",
+    "image": "assets/prod-4-1791927175111.jpg"
   }
 ];
