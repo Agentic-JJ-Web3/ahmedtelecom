@@ -353,5 +353,19 @@ window.PRODUCTS = [
     "features": [],
     "imageAlt": "",
     "image": "assets/prod-13-1791928793021.jpg"
+  },
+  {
+    "id": "prod-14",
+    "category": "shisha",
+    "name": "200k PUFFS SHISHA",
+    "price": 8000,
+    "oldPrice": 10000,
+    "availability": null,
+    "sample": false,
+    "short": "",
+    "description": "",
+    "features": [],
+    "imageAlt": "",
+    "image": "assets/prod-14-1791928846261.jpg"
   }
 ];
