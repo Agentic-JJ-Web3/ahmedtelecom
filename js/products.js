@@ -255,5 +255,19 @@ window.PRODUCTS = [
     "features": [],
     "imageAlt": "",
     "image": "assets/prod-6-1791927333871.jpg"
+  },
+  {
+    "id": "prod-7",
+    "category": "accesoires",
+    "name": "Shaving machine",
+    "price": 10000,
+    "oldPrice": 15000,
+    "availability": null,
+    "sample": false,
+    "short": "",
+    "description": "",
+    "features": [],
+    "imageAlt": "",
+    "image": "assets/prod-7-1791928437390.jpg"
   }
 ];
