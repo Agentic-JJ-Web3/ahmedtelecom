@@ -117,8 +117,8 @@ window.PRODUCTS = [
     "sample": false,
     "category": "montres",
     "name": "Montre connectée",
-    "price": 15000,
-    "oldPrice": 18000,
+    "price": 10000,
+    "oldPrice": 15000,
     "availability": "on_request",
     "image": "assets/montre-connectee.jpg",
     "short": "Notifications et suivi d’activité.",
@@ -126,7 +126,8 @@ window.PRODUCTS = [
     "features": [
       "Notifications",
       "Suivi d’activité"
-    ]
+    ],
+    "imageAlt": ""
   },
   {
     "id": "montre-amoled-giftset",
