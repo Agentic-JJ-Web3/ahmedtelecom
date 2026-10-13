@@ -23,6 +23,10 @@ window.CATEGORIES = [
   {
     "id": "shisha",
     "label": "Shisha"
+  },
+  {
+    "id": "fan",
+    "label": "Fans"
   }
 ];
 
