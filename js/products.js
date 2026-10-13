@@ -154,12 +154,13 @@ window.PRODUCTS = [
     "sample": false,
     "category": "shisha",
     "name": "Shisha complète",
-    "price": 20000,
+    "price": 10000,
     "oldPrice": null,
     "availability": "on_request",
     "image": "assets/shisha-complete.jpg",
     "short": "Ensemble prêt à utiliser.",
     "description": "Un ensemble shisha complet. Réservé aux adultes.",
-    "features": []
+    "features": [],
+    "imageAlt": ""
   }
 ];
