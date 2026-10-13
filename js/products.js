@@ -269,5 +269,19 @@ window.PRODUCTS = [
     "features": [],
     "imageAlt": "",
     "image": "assets/prod-7-1791928437390.jpg"
+  },
+  {
+    "id": "prod-8",
+    "category": "accesoires",
+    "name": "Light rope",
+    "price": 6000,
+    "oldPrice": 7500,
+    "availability": "in_stock",
+    "sample": false,
+    "short": "",
+    "description": "",
+    "features": [],
+    "imageAlt": "",
+    "image": "assets/prod-8-1791928483428.jpg"
   }
 ];
