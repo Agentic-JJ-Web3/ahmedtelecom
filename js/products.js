@@ -191,5 +191,19 @@ window.PRODUCTS = [
     "features": [],
     "imageAlt": "",
     "image": "assets/prod-2-1791927062166.jpg"
+  },
+  {
+    "id": "prod-3",
+    "category": "powerbanks",
+    "name": "New product",
+    "price": 7000,
+    "oldPrice": 10000,
+    "availability": "in_stock",
+    "sample": false,
+    "short": "",
+    "description": "",
+    "features": [],
+    "imageAlt": "",
+    "image": "assets/prod-3-1791927128009.jpg"
   }
 ];
