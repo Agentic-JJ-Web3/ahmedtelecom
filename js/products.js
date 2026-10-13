@@ -133,7 +133,7 @@ window.PRODUCTS = [
     "sample": false,
     "category": "montres",
     "name": "Montre AMOLED + coffret bijoux",
-    "price": 22000,
+    "price": 8500,
     "oldPrice": null,
     "availability": "on_request",
     "image": "assets/montre-amoled-giftset.jpg",
@@ -141,10 +141,13 @@ window.PRODUCTS = [
     "description": "Montre connectée écran AMOLED avec coffret cadeau : bracelet, collier et chargeur magnétique inclus.",
     "features": [
       "Appels Bluetooth",
-      "Suivi santé (fréquence cardiaque, SpO2, sommeil)",
+      "Suivi santé (fréquence cardiaque",
+      "SpO2",
+      "sommeil)",
       "Étanche IP68",
       "Coffret bijoux inclus"
-    ]
+    ],
+    "imageAlt": ""
   },
   {
     "id": "shisha-complete",
