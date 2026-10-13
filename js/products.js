@@ -325,5 +325,19 @@ window.PRODUCTS = [
     "features": [],
     "imageAlt": "",
     "image": "assets/prod-11-1791928662749.jpg"
+  },
+  {
+    "id": "prod-12",
+    "category": "casques",
+    "name": "Wireless",
+    "price": 9500,
+    "oldPrice": 11000,
+    "availability": null,
+    "sample": false,
+    "short": "",
+    "description": "",
+    "features": [],
+    "imageAlt": "",
+    "image": "assets/prod-12-1791928706777.jpg"
   }
 ];
