@@ -297,5 +297,19 @@ window.PRODUCTS = [
     "features": [],
     "imageAlt": "",
     "image": "assets/prod-9-1791928539712.jpg"
+  },
+  {
+    "id": "prod-10",
+    "category": "casques",
+    "name": "Earpods",
+    "price": 4500,
+    "oldPrice": 5500,
+    "availability": null,
+    "sample": false,
+    "short": "",
+    "description": "",
+    "features": [],
+    "imageAlt": "",
+    "image": "assets/prod-10-1791928608068.jpg"
   }
 ];
