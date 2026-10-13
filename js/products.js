@@ -27,6 +27,10 @@ window.CATEGORIES = [
   {
     "id": "fan",
     "label": "Fans"
+  },
+  {
+    "id": "accesoires",
+    "label": "Accessories"
   }
 ];
 
