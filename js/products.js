@@ -440,6 +440,6 @@ window.PRODUCTS = [
     "description": "",
     "features": [],
     "imageAlt": "",
-    "image": "assets/prod-19-1791929233166.jpg"
+    "image": "assets/prod-19-1792064105366.jpg"
   }
 ];
