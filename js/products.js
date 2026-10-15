@@ -286,7 +286,7 @@ window.PRODUCTS = [
     "description": "",
     "features": [],
     "imageAlt": "",
-    "image": "assets/prod-8-1791928483428.jpg"
+    "image": "assets/prod-8-1792064291867.jpg"
   },
   {
     "id": "prod-9",
