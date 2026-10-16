@@ -1,6 +1,6 @@
 (() => {
   'use strict';
-  const API_URL = '/.netlify/functions/admin';
+  const API_URL = '/api/admin';
   const PWD_KEY = 'at_admin_pwd';
   const $ = (s, r = document) => r.querySelector(s);
 
@@ -239,7 +239,7 @@
       renderCategories();
       renderProducts();
       $('#product-form-section').hidden = true;
-      setStatus('Produit enregistré. Netlify va redéployer le site (≈30-60s).', 'ok');
+      setStatus('Produit enregistré. Le site va se redéployer (≈30-60s).', 'ok');
     } catch (err) {
       setStatus(err.message, 'error');
     }
