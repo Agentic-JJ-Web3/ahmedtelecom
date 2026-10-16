@@ -1,9 +1,9 @@
 'use strict';
 
 /* ============================================================
-   Proxy admin — Ahmed Telecom
+   Proxy admin — Ahmed Telecom (Vercel serverless function)
    Garde le token GitHub côté serveur (variables d'environnement
-   Netlify) et expose un CRUD simple sur js/products.js, poussé
+   Vercel) et expose un CRUD simple sur js/products.js, poussé
    directement sur GitHub. Aucune base de données : le fichier
    JS du dépôt reste l'unique source de vérité, modifié via des
    méthodes de tableau (find / push / filter / map) côté serveur.
@@ -15,14 +15,6 @@ const GITHUB_API = 'https://api.github.com';
 const PRODUCTS_PATH = 'js/products.js';
 const ASSETS_DIR = 'assets';
 const MAX_IMAGE_BYTES = 400 * 1024; // garde-fou, cible réelle ~150 Ko côté client
-
-function json(statusCode, body) {
-  return {
-    statusCode,
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(body),
-  };
-}
 
 function getEnv() {
   const { GITHUB_TOKEN, GITHUB_REPO, GITHUB_BRANCH, ADMIN_PASSWORD } = process.env;
@@ -191,30 +183,38 @@ async function handleUploadImage(payload, env) {
   return { path: `${ASSETS_DIR}/${filename}` };
 }
 
-exports.handler = async (event) => {
-  if (event.httpMethod === 'OPTIONS') {
-    return { statusCode: 200, headers: { 'Access-Control-Allow-Headers': 'Content-Type', 'Access-Control-Allow-Methods': 'POST, OPTIONS' }, body: '' };
+module.exports = async (req, res) => {
+  if (req.method === 'OPTIONS') {
+    res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+    res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
+    res.status(200).end();
+    return;
   }
-  if (event.httpMethod !== 'POST') {
-    return json(405, { error: 'Méthode non autorisée.' });
+  if (req.method !== 'POST') {
+    res.status(405).json({ error: 'Méthode non autorisée.' });
+    return;
   }
 
-  let body;
-  try {
-    body = JSON.parse(event.body || '{}');
-  } catch (e) {
-    return json(400, { error: 'Corps de requête JSON invalide.' });
+  let body = req.body;
+  if (typeof body === 'string') {
+    try { body = JSON.parse(body || '{}'); } catch (e) {
+      res.status(400).json({ error: 'Corps de requête JSON invalide.' });
+      return;
+    }
   }
+  if (!body || typeof body !== 'object') body = {};
 
   let env;
   try {
     env = getEnv();
   } catch (e) {
-    return json(e.statusCode || 500, { error: e.message });
+    res.status(e.statusCode || 500).json({ error: e.message });
+    return;
   }
 
   if (body.password !== env.adminPassword) {
-    return json(401, { error: 'Mot de passe incorrect.' });
+    res.status(401).json({ error: 'Mot de passe incorrect.' });
+    return;
   }
 
   const { action, payload } = body;
@@ -223,22 +223,29 @@ exports.handler = async (event) => {
     switch (action) {
       case 'list': {
         const { categories, products } = await loadProducts(env);
-        return json(200, { categories, products });
+        res.status(200).json({ categories, products });
+        return;
       }
       case 'upsertProduct':
-        return json(200, await handleUpsertProduct(payload, env));
+        res.status(200).json(await handleUpsertProduct(payload, env));
+        return;
       case 'deleteProduct':
-        return json(200, await handleDeleteProduct(payload, env));
+        res.status(200).json(await handleDeleteProduct(payload, env));
+        return;
       case 'upsertCategory':
-        return json(200, await handleUpsertCategory(payload, env));
+        res.status(200).json(await handleUpsertCategory(payload, env));
+        return;
       case 'deleteCategory':
-        return json(200, await handleDeleteCategory(payload, env));
+        res.status(200).json(await handleDeleteCategory(payload, env));
+        return;
       case 'uploadImage':
-        return json(200, await handleUploadImage(payload, env));
+        res.status(200).json(await handleUploadImage(payload, env));
+        return;
       default:
-        return json(400, { error: `Action inconnue : ${action}` });
+        res.status(400).json({ error: `Action inconnue : ${action}` });
+        return;
     }
   } catch (e) {
-    return json(e.statusCode || 500, { error: e.message || 'Erreur serveur.' });
+    res.status(e.statusCode || 500).json({ error: e.message || 'Erreur serveur.' });
   }
 };
