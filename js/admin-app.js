@@ -114,8 +114,8 @@
           <div class="admin-product-row__meta">${p.id} · ${money(p.price)}${p.oldPrice ? ` (avant ${money(p.oldPrice)})` : ''} · ${p.category}</div>
         </div>
         <div class="admin-product-row__actions">
-          <button type="button" class="btn btn--sm" data-edit="${p.id}">Modifier</button>
-          <button type="button" class="btn btn--sm" data-del="${p.id}">Supprimer</button>
+          <button type="button" class="icon-btn" data-edit="${p.id}" title="Modifier" aria-label="Modifier le produit"><svg class="icon" aria-hidden="true"><use href="#i-edit"/></svg></button>
+          <button type="button" class="icon-btn icon-btn--danger" data-del="${p.id}" title="Supprimer" aria-label="Supprimer le produit"><svg class="icon" aria-hidden="true"><use href="#i-trash"/></svg></button>
         </div>
       </div>`).join('') || '<p class="admin-muted">Aucun produit.</p>';
   }
