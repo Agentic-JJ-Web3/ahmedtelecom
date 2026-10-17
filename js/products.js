@@ -92,22 +92,6 @@ window.PRODUCTS = [
     ]
   },
   {
-    "id": "oreillette",
-    "sample": true,
-    "category": "bluetooth",
-    "name": "Oreillette Bluetooth",
-    "price": 3500,
-    "oldPrice": null,
-    "availability": "in_stock",
-    "image": "assets/earbuds.svg",
-    "short": "Légère, pratique pour les appels.",
-    "description": "Une oreillette discrète pour téléphoner les mains libres.",
-    "features": [
-      "Mains libres",
-      "Légère"
-    ]
-  },
-  {
     "id": "powerbank-20000",
     "sample": false,
     "category": "powerbanks",
