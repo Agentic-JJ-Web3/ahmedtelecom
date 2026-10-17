@@ -247,9 +247,9 @@ window.PRODUCTS = [
   {
     "id": "prod-7",
     "category": "accesoires",
-    "name": "Shaving machine",
-    "price": 10000,
-    "oldPrice": 15000,
+    "name": "Selfie stick",
+    "price": 6000,
+    "oldPrice": 7000,
     "availability": null,
     "sample": false,
     "short": "",
