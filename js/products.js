@@ -415,9 +415,9 @@ window.PRODUCTS = [
   {
     "id": "prod-19",
     "category": "phone",
-    "name": "Iphone",
-    "price": 50000,
-    "oldPrice": 60000,
+    "name": "Iphone 14",
+    "price": 190000,
+    "oldPrice": null,
     "availability": "in_stock",
     "sample": false,
     "short": "",
