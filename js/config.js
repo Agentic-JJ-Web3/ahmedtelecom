@@ -48,7 +48,7 @@ window.SITE_CONFIG = {
     enabled: true,
     title: 'Les bons plans du moment',
     text: 'Une sélection de produits à prix réduit. Écrivez-nous pour confirmer l’offre et la disponibilité.',
-    productIds: [],
+    productIds: ['prod-11', 'prod-15', 'prod-9'],
     deadline: null
   },
 
