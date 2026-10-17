@@ -359,8 +359,8 @@ window.PRODUCTS = [
   {
     "id": "prod-15",
     "category": "phone",
-    "name": "IPhone 12",
-    "price": 165000,
+    "name": "IPhone 12promax",
+    "price": 185000,
     "oldPrice": null,
     "availability": "in_stock",
     "sample": false,
