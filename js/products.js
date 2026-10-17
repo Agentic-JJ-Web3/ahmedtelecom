@@ -191,9 +191,9 @@ window.PRODUCTS = [
   {
     "id": "prod-3",
     "category": "powerbanks",
-    "name": "New product",
-    "price": 7000,
-    "oldPrice": 10000,
+    "name": "Electric fan",
+    "price": 10000,
+    "oldPrice": 15000,
     "availability": "in_stock",
     "sample": false,
     "short": "",
