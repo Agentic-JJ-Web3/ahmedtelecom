@@ -387,8 +387,8 @@ window.PRODUCTS = [
   {
     "id": "prod-17",
     "category": "phone",
-    "name": "Iphone 18",
-    "price": 800000,
+    "name": "Iphone 17",
+    "price": 850000,
     "oldPrice": 900000,
     "availability": "in_stock",
     "sample": false,
